@@ -1,0 +1,67 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+    margin: 0px;
+    display: flex;
+    background: blue;
+    overflow: hidden;
+    /* align-content: center; */
+    justify-content: center;
+    min-height: 100%;
+    align-items: center;
+}
+.container{
+    display: flex;
+     height: 200px;
+    min-width: 500px;
+    margin: auto;
+  border-radius: .2rem;
+    background: aliceblue;
+      flex-direction: column;
+    align-items: center;
+  transition:.5s ease-in height;
+}
+.container.active{
+  height:400px;
+}
+.container .QRCodeImg{
+  display: flex;
+  opacity:0;
+    height: 150px;
+    justify-content: center;
+  margin: .7rem;
+    width: 80%;
+    border: #717070 2px solid;
+    padding: .9rem;
+}
+.container.active .QRCodeImg{
+  opacity:10;
+  transition:opacity 0.5s 0.5s ease;
+}
+.QRCodeImg img{
+  height: 100%;
+}
+p{
+  color: #878787;
+    margin: 0.1rem;
+}
+input{
+  width: 80%;
+    /* height: 2rem; */
+  font-size: large;
+    width: 84%;
+    padding: .6rem;
+}
+.btn{
+width: 80%;
+    background: blue;
+    margin: .7rem;
+    /* height: 6rem; */
+    color: white;
+    font-size: large;
+    width: 84%;
+    padding: .6rem;
+    /* font-size: medium;
+}
